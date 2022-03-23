@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+}
+
+body{
+  background-color:#f7f7f7;
+}
+/* Header */
+
+.header_body{
+  color:white;
+}
+
+/* set_border */
+.set_border{
+  border-bottom: 3px solid transparent;
+}
+.set_border:hover{
+  text-shadow: 0 0 5px whitesmoke;
+  border-bottom:2px solid black;
+}
+
+/* Home Part */
+.home{
+  height: auto;
+}
+
+.textimg{
+  background-repeat: no-repeat;
+  background-position: top center; 
+}
+
+
+.gfont1{
+  color:black;
+  font-family: 'Pacifico', cursive;
+}
+
+
+/* SignIn Background */
+.signin {
+  height: 100vh; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color:white;
+}
+
+/* signin_content */
+.signin-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+
+/* For signin */
+@media (min-width: 650px) {
+  .signin {
+    background-position: center center;
+  }
+  
+}
+
+@media only screen and (max-width: 650px) {
+  .signin_body{
+    height:500px !important;
+    width:400px !important;
+  }
+
+  .credential{
+    margin-top:10px !important;
+    margin: 0 auto !important;
+  }
+}
+
+/* Signup_body */
+.signup {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  color:white;
+}
+
+/* signin_content */
+.signup-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 40px;
+}
+
+/* For Signup */
+@media (min-width: 650px) {
+  .signup {
+    background-position: center center;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .signup_body{
+    height:700px !important;
+    width:400px !important;
+  }
+
+  .new{
+    margin: 10px auto !important;
+    text-align: center !important;
+  }
+}
+
+@media (min-width: 410px) {
+  .signup {
+    background-position: center center;
+  }
+}
+
+@media only screen and (max-width: 410px) {
+  .signup{
+    
+  }
+  .signup_body{
+    margin-top: -15px !important;
+    height:600px !important;
+    width:350px !important;
+    padding: 0 auto;
+  }
+
+  .heading{
+    margin-bottom: -2rem !important;
+  }
+  
+}
+
+
+/* Gamil_icon */
+.gmail_icon{
+  background: url("https://cdn-icons-png.flaticon.com/512/5968/5968534.png") no-repeat left;
+  background-size: 25px;
+  border:inset 10px transparent;
+  background-position: 10px;
+}
+
+.gmail_icon:after,.gmail_icon:focus{
+  background: url("https://cdn-icons-png.flaticon.com/512/5968/5968534.png") no-repeat left;
+  background-size: 25px;
+  /* border:inset 10px transparent; */
+  background-position: 10px;
+}
+/* Password_icon */
+.password_icon{
+  background: url("../src/Assets/password.png") no-repeat left;
+  background-size: 25px;
+  border:inset 10px transparent;
+  background-position: 10px;
+}
+
+/* firstname_icon */
+.firstname_icon{
+  background: url("https://cdn-icons.flaticon.com/png/512/2202/premium/2202112.png?token=exp=1647485888~hmac=14941a4b74d58a22185dccb81ce7c72c") no-repeat left;
+  background-size: 30px;
+  border:inset 10px transparent;
+  background-position: 10px;
+}
+
+.lastname_icon{
+  background: url("https://cdn-icons.flaticon.com/png/512/2202/premium/2202112.png?token=exp=1647485888~hmac=14941a4b74d58a22185dccb81ce7c72c") no-repeat left;
+  background-size: 30px;
+  border:inset 10px transparent;
+  background-position: 10px;
+}
+
+.confirmpassword_icon{
+  background: url("https://cdn-icons-png.flaticon.com/512/3427/3427189.png") no-repeat left;
+  background-size: 30px;
+  border:inset 10px transparent;
+  background-position: 10px; 
+}
+
+/* INPUT BOXES */
+#gmail:focus,#fname:focus,#lname:focus,#password:focus,#confirmpassword:focus{
+  border: 1px solid green;
+}
+
+
+/* Home */
+.home-item-wrapper:hover{
+  box-shadow: 0 0 10px rgba(55,55,55,0.7);
+}
+
+
+/* btn animation */
+.bouncy{
+  transition: all 0.2s;
+  animation: bouncy 5s infinite linear;
+  position: relative;
+}
+
+@keyframes bouncy {
+  0% {
+    top: 0em;
+  }
+  40% {
+    top: 0em;
+  }
+  43% {
+    top: -0.9em;
+  }
+  46% {
+    top: 0em;
+  }
+  48% {
+    top: -0.4em;
+  }
+  50% {
+    top: 0em;
+  }
+  100% {
+    top: 0em;
+  }
+}
+
+.arrow1 {
+  animation: slide1 1s ease-in-out infinite;
+  margin-left: 9px;
+}
+
+@keyframes slide1 {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(10px, 0);
+  }
+}
+
+.cart{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.coupan:hover{
+  color:whitesmoke !important;
+  border-bottom:1px solid white;
+}
+
+
+.confirm{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.product-button:hover{
+  color: white !important;
+  background-color:black;
+}
