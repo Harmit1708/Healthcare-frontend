@@ -43,7 +43,7 @@ function Razorpay() {
     const options = {
         key: __DEV__ ? 'rzp_test_kd9ipGkYQ7l7tY' : 'PRODUCTION_KEY',
         currency: data.currency,
-        amount: priceValue,
+        amount: priceValue *100,
         order_id: data.id,
         name: 'Shopping',
         description: 'Thank you for Shopping.',
